@@ -40,27 +40,15 @@ class StreamlitUI:
         if st.button("Generate Post"):
             try:
                 with st.spinner(
-<<<<<<< HEAD
-                    "Loading AI model and generating post... This might take a few moments."
-                ):
-                    st.info(
-                        "This process might take 1-2 minutes as we're using a large language model."
-                    )
-=======
                     "Generating new post... This might take a few moments."
                 ):
                     st.info("Connecting to Groq API...")
->>>>>>> 8ea3ce0 (Initial commit)
                     new_post = self.post_generator.generate_post()
                     st.success("New post generated!")
 
                     lines = new_post.split("\n")
 
-<<<<<<< HEAD
-                    st.header(lines[1])
-=======
                     st.header(lines[1])  # Display title
->>>>>>> 8ea3ce0 (Initial commit)
 
                     content_text = "\n".join(
                         [line for line in lines[3:] if not line.startswith("#")]
