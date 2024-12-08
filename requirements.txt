@@ -1,6 +1,11 @@
 streamlit
+<<<<<<< HEAD
 transformers
 torch
 accelerate
 python-dotenv
 sentencepiece
+=======
+groq
+python-dotenv
+>>>>>>> 8ea3ce0 (Initial commit)

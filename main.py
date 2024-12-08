@@ -6,7 +6,7 @@ def main():
     app.run()
 
 
-print("Hello")
-
+=======
+>>>>>>> 8ea3ce0 (Initial commit)
 if __name__ == "__main__":
     main()
